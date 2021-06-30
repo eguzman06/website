@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>ModalBostrapp</title>
+</head>
+<body>
+    <h1>TRABAJO CON MODAL</h1>
+    <table class="table table-hover table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">APELLIDO MATERNO</th>
+            <th scope="col">USUARIO</th>
+            <th scope="col">SEXO</th>
+            <th scope="col">EDAD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>EDGAR</td>
+            <td>GUZMAN</td>
+            <td>eguzman</td>
+            <td>MASCULINO</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>JACOBO</td>
+            <td>MARTINEZ</td>
+            <td>jacobo1</td>
+            <td>MASCULINO</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">DE LA ROSA</td>
+            <td>sdelarosa</td>
+            <td>MASCULINO</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>PAOLA</td>
+            <td>MACIAS</td>
+            <td>Paobb12345</td>
+            <td>FEMENINO</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>YANETH</td>
+            <td>CARMONA</td>
+            <td>Beni12</td>
+            <td>FEMENINO</td>
+            <td>45</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <button type="button" class="btn btn-info"data-bs-toggle="modal" data-bs-target="#mymodal">Nuevo cliente</button>
+     <button type="button" class="btn btn-warning"data-bs-toggle="modal1" data-bs-target="#mymodal1">Editar cliente</button>
+<button type="button" class="btn btn-danger"data-bs-toggle="modal2" data-bs-target="#mymodal2">Eliminar cliente</button>
+
+<div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ALUMNO</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">id:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+        <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">NOMBRE:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">APELLIDO:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">USUARIO:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="sex" class="col-form-label">SEXO:</label>
+                <select class="form-select" aria-label="Default select example" name="sex">
+                    <option value="1">MASCULINO</option>
+                    <option value="2">FEMENINO</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">EDAD:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
+          <button type="button" class="btn btn-primary">GUARDAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
